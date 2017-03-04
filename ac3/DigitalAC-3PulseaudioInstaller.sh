@@ -17,6 +17,7 @@ echo >>a52.conf "    }"
 echo >>a52.conf "  rate 48000 #required somehow, otherwise nothing happens in PulseAudio"
 echo >>a52.conf "  }"
 echo >>a52.conf "}"
+sudo apt-get install libavresample-dev
 sudo apt-get build-dep libasound2-plugins
 sudo apt-get install libavcodec-dev libavformat-dev
 mkdir /tmp/a52

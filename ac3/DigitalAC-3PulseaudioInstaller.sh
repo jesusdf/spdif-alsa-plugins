@@ -19,6 +19,7 @@ echo >>a52.conf "  }"
 echo >>a52.conf "}"
 sudo sed -i 's/\#deb-src/deb-src/g' /etc/apt/sources.list
 sudo sed -i 's/\# deb-src/deb-src/g' /etc/apt/sources.list
+sudo sed -i 's/default-sample-channels \= 2/default-sample-channels \= 6/g' /etc/pulse/daemon.conf
 sudo apt-get update
 sudo apt-get install libavresample-dev
 sudo apt-get build-dep libasound2-plugins
